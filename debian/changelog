@@ -1,3 +1,12 @@
+deb8-theme (1.1-1) stable; urgency=medium
+
+  * Import new upstream release, including fixes for several issues:
+    - libgtk error messages on stderr
+    - GTK3 buttons are being cut off
+    - lightdm improvements
+
+ -- Jens Oliver John <dev@2ion.de>  Wed, 18 Feb 2015 17:42:11 +0100
+
 deb8-theme (1.0-5) unstable; urgency=medium
 
   * Remove README.Source from the package (unused)

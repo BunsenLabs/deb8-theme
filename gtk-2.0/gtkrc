@@ -157,14 +157,6 @@ style "default"
 style "resize-grip"
 {
 	engine "pixmap"	{
-		image {
-			function	= RESIZE_GRIP
-			recolorable	= FALSE
-			detail		= "statusbar"
-			overlay_file	= ""
-			overlay_border	= {0,0,0,0 }
-			overlay_stretch	= FALSE
-		}
         }
 }
 
@@ -430,16 +422,15 @@ style "scrollbar"
 	GtkScrollbar::stepper-size	= 0
 	GtkScrollbar::arrow-scaling	= 0.0
 	
-	bg[NORMAL]	= shade (1.0, @selected_bg_color)
-	
-	bg[ACTIVE]	= shade (1.75, @base_color)
-	bg[PRELIGHT]	= shade (0.9, @selected_bg_color)
+	bg[NORMAL]	= shade (0.85, @selected_bg_color)
+	bg[ACTIVE]	= shade (0.85, @selected_bg_color)
+	bg[PRELIGHT]	= shade (0.70, @selected_bg_color)
 	bg[INSENSITIVE]	= shade (0.70, @selected_bg_color)
 
 	engine "murrine"
 	{
 		colorize_scrollbar	= FALSE
-		roundness	= 10
+		roundness	= 0
 		border_shades	= {1.0, 1.0}
 		trough_shades	= {0.95, 0.95}
 		contrast	= 0.05
